@@ -20,6 +20,49 @@ nav ul > li {
     display: inline;
     margin: 0 0.5em;
 }
+.dashboard-console {
+    display: flex;
+    flex-direction: row;
+}
+.dashboard-scan {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    outline: 1px solid red;
+    text-align: left;
+}
+.scan-console-item {
+    display: flex;
+    flex-direction: row;
+    padding: 0.33em;
+    height: 2em;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.scan-console-item > p{
+    margin-right: 1em;
+}
+
+.org-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    height: auto;
+}
+.org-wrapper > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.org-wrapper > * {
+    margin: 0 0.5em;
+}
 
 
 .btn-row {
@@ -37,6 +80,20 @@ nav ul > li {
     flex-direction: row;
     justify-content: center;
 }
+.dashboard {
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+.dashboard-console-ctrls{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+.dashboard-console-ctrls > button {
+    min-width: 150px !important;
+}
+
 .main-container {
     outline: 1px solid red;
     display: flex;
@@ -108,6 +165,12 @@ nav ul > li {
 .book-description-wrapper > h1 {
     margin-bottom: 0.75em;
 }
+.book-description-wrapper--dashboard {
+    font-size: 12px;
+}
+.book-description-wrapper--dashboard > h1 {
+    margin-bottom: 0.25em;
+}
 .partner-description-wrapper > h1{
     margin-bottom: 0.75em;
 }
@@ -131,6 +194,9 @@ nav ul > li {
     height: 8vw;
     min-height: 88px;
     width: auto;
+}
+.book-img-wrapper--dashboard > img {
+    max-height: 50px;
 }
 .partner-img-wrapper > img {
     max-height: 200px;
@@ -160,9 +226,13 @@ nav ul > li {
 .condition-box > * {
     margin-right: 0.66em;
 }
-
-
-
+.container-header {
+    text-align: left;
+    align-items: left;
+    display: flex;
+    outline: 1px solid red;
+    width: 100%;
+}
 .rewards-container {
     display: flex;
     flex-direction: row;
@@ -195,7 +265,6 @@ nav ul > li {
     text-align: left;
 
 }
-
 .status-col {
     display: flex;
     flex-direction: column;
@@ -205,6 +274,21 @@ nav ul > li {
     margin: 0 auto;
     flex-grow: 1;
 
+}
+.status-col--dashboard {
+    display: flex;
+    flex-direction: row;
+}
+
+.status-col--dashboard > button {
+    margin: 0 0.88em;
+}
+.btn-icon {
+    max-width:  30px;
+    width: 30px;
+}
+.btn-shipping {
+    max-width: 60px;
 }
 
 .book-status {

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav class="dashboard">
+        <div class="nav-logo-wrapper nav-logo-wrapper--dashboard">
+            <img src="https://img.icons8.com/color/48/000000/leaf.png"/>
+            Kitabu
+        </div>
+        <div class="dashboard-console">
+            <div class="org-wrapper">
+                <img src="https://cdn.cdnparenting.com/articles/2019/05/02192731/667343506-H.jpg" class='org-profile'/>
+                <p>Jane Doe Household</p>
+            </div>
+        <ul>
+            <li><a href="/dashboard.html">Queue</a></li>
+            <li><a href="/shipping.html">Shipping</a></li>
+            <li><a href="/index.html">Sign Out</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <div class="donate-content list">
+            <div class="container-header"><h1>Donation Queue</h1></div>
+            <div class="dashboard-console-ctrls">
+                <button class="btn-shipping" onclick="alert('are you sure you want to add all to shipping?')">Add All To Shipping</button>
+            </div>
+
+            <div class="book-item">
+                <div class="book-container">
+                    <div class="book-wrapper">
+                        <div class="book-img-wrapper book-img-wrapper--dashboard">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/719KFS67JBL._SX309_BO1,204,203,200_.gif">
+                        </div>
+                        <div class="book-description-wrapper book-description-wrapper--dashboard">
+                            <!--Initial state when no book has scanned-->
+                            <!--<h1>Focus camera on barcode to scan item</h1>-->
+                            <h1>Dan Norman, Design of Everyday Things</h1>
+                            <div class="book-description-wrapper--details">
+                                <p>ISBN: 123-4212-1232-12312</p>
+                                <p>Original Date Published: January 26, 1976</p>
+                            </div>
+                            <div class="condition-box">
+                                <label for="condition">Condition</label>
+                                <select id="condition">
+                                    <option value="Select" selected>Select</option>
+                                    <option value="New">New</option>
+                                    <option value="Very good">Very Good</option>
+                                    <option value="Slightly Used">Slightly Used</option>
+                                    <option value="Very Used">Very Used</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="status-col">
+                            <div class="product-status  status-col--dashboard">
+                                <button class="btn-icon">O</button>
+                                <button class="btn-icon">X</button>
+                                <button class="btn-shipping">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="book-item">
+                    <div class="book-container">
+                        <div class="book-wrapper">
+                            <div class="book-img-wrapper book-img-wrapper--dashboard">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/719KFS67JBL._SX309_BO1,204,203,200_.gif">
+                            </div>
+                            <div class="book-description-wrapper book-description-wrapper--dashboard">
+                                <!--Initial state when no book has scanned-->
+                                <!--<h1>Focus camera on barcode to scan item</h1>-->
+                                <h1>Dan Norman, Design of Everyday Things</h1>
+                                <div class="book-description-wrapper--details">
+                                    <p>ISBN: 123-4212-1232-12312</p>
+                                    <p>Original Date Published: January 26, 1976</p>
+                                </div>
+                                <div class="condition-box">
+                                    <label for="condition">Condition</label>
+                                    <select id="condition">
+                                        <option value="Select" selected>Select</option>
+                                        <option value="New">New</option>
+                                        <option value="Very good">Very Good</option>
+                                        <option value="Slightly Used">Slightly Used</option>
+                                        <option value="Very Used">Very Used</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="status-col">
+                                <div class="product-status  status-col--dashboard">
+                                    <button class="btn-icon">O</button>
+                                    <button class="btn-icon">X</button>
+                                    <button class="btn-shipping">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                
+        </div>
+        <div class="dashboard-scan">
+            <div class="scan-console-item">
+                <p>Scan oncoming requests</p>
+                <button onclick="alert('when collector scans QR code, a popup modal should appear showing a summary of books to be added to the queue, which they can accept or reject')">QR Code Scan</button>
+            </div>
+            <div class="scan-console-item">
+                <p>Manually Scan Barcode</p>
+                <button>Barcode Scan</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
